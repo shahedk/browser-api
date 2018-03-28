@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Browser.Core", "Browser.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Browser.Core.Test", "Browser.Core.Test\Browser.Core.Test.csproj", "{D49B711D-AC68-4917-B34B-B65F32768B97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Browser.Background", "Browser.Background\Browser.Background.csproj", "{074AD0CB-F388-4B4A-AD6F-E5273B9E075A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D49B711D-AC68-4917-B34B-B65F32768B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D49B711D-AC68-4917-B34B-B65F32768B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D49B711D-AC68-4917-B34B-B65F32768B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074AD0CB-F388-4B4A-AD6F-E5273B9E075A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074AD0CB-F388-4B4A-AD6F-E5273B9E075A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074AD0CB-F388-4B4A-AD6F-E5273B9E075A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074AD0CB-F388-4B4A-AD6F-E5273B9E075A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

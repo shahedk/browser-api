@@ -185,7 +185,7 @@ try {
                                         log("Take screen shot?: ", takeScreenShot);
                                     }
                                     if (takeScreenShot.toLowerCase() === 'true') {
-                                        var screenShotId = 'img' + instanceId;
+                                        var screenShotId = instanceId;
                                         var imgPath = screenShotFolderPath + "/" + screenShotId + '.png';
                                         page.render(imgPath);
 
@@ -199,7 +199,7 @@ try {
                                     // Save Raw HTML
                                     log("Save raw html?: ", saveRawHtml);
                                     if (saveRawHtml.toLowerCase() === 'true') {
-                                        var rawHtmlContentId = 'raw' + instanceId;
+                                        var rawHtmlContentId = instanceId;
                                         var htmlFilePath = rawHtmlFolderPath + "/" + rawHtmlContentId + '.html';
                                         fs.write(htmlFilePath, page.content, 'w');
 

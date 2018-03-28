@@ -13,7 +13,8 @@ namespace Browser.Core
 
         public BrowserContent GetContent(BrowserSettings settings)
         {
-            var content = new BrowserContent();
+            var content = new BrowserContent(settings.UniqueId, settings.TakeScreenShot, settings.SaveRawHtml);
+
             try
             {
                 content.ConsoleOutput = LoadContent(settings);
@@ -115,10 +116,10 @@ namespace Browser.Core
                        $"\"{settings.TakeScreenShot}\" " +      //5
                        $"\"{settings.SaveRawHtml}\" " +         //6
                        $"\"{settings.UniqueId}\" " +            //7
-                       $"\"{settings.ScreenShotFolderName.ToArgFriendlyString()}\" " +//8
-                       $"\"{settings.RawHtmlFolderName.ToArgFriendlyString()}\" " +   //9
+                       $"\"{Constants.ScreenShotFolderName.ToArgFriendlyString()}\" " +//8
+                       $"\"{Constants.RawHtmlFolderName.ToArgFriendlyString()}\" " +   //9
                        $"\"{settings.ParsedDataFilePath.ToArgFriendlyString()}\" " +  //10
-                       $"\"{settings.ScriptFolderPath.ToArgFriendlyString()}\" " +    //11
+                       $"\"{Constants.OutputTmpFolderPath.ToArgFriendlyString()}\" " +    //11
                        $"\"{settings.IsDebugMode}\" ";          //12
 
             if (settings.IsDebugMode)
