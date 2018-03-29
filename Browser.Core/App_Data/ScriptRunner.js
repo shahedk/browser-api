@@ -5,7 +5,6 @@ var fs = require('fs');
 
 var parseResult = {
     "data": [],
-    "tasks": [],
     "errors": [],
     "scripts": [],
     "status": "in progress",
@@ -31,9 +30,6 @@ try {
     var screenShotFolderPath = system.args[8];
     var rawHtmlFolderPath = system.args[9];
     var parsedDataFilePath = system.args[10];
-
-    // NOTE: Library path is not working on windows machine. Using the default root directory for now
-    //page.libraryPath = system.args[11];
 
     // Check for DEBUG flag
     var isDebug = true;
@@ -85,7 +81,6 @@ try {
                             window.scan_data = '';
                             window.scan_error = '';
                             window.scan_status = 'pending';
-                            window.scan_tasks = '';
                         });
 
                         // DEBUG message
@@ -94,7 +89,7 @@ try {
                         }
 
                         // Inject script to scrap the data
-                        if (page.injectJs(scriptName)) {
+                        if (page.injectJs( 'script/' + scriptName)) {
 
                             // DEBUG message
                             if (isDebug) {
@@ -130,7 +125,6 @@ try {
                                         payload.error = [];
                                         payload.data = scan_data;
                                         payload.status = scan_status;
-                                        payload.tasks = scan_tasks;
                                         payload.len = scan_data.length;
                                         payload.isFile = false;
                                         if (scan_error) {
@@ -149,7 +143,6 @@ try {
                                     parseResult.status = scanResult.status;
                                     parseResult.count = scanResult.len;
                                     parseResult.data = scanResult.data;
-                                    parseResult.tasks = scanResult.tasks;
                                     parseResult.instanceId = instanceId;
 
                                 } catch (ex) {

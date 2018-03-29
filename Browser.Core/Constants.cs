@@ -4,8 +4,9 @@ namespace Browser.Core
 {
     public class Constants
     {
-        private const string OutputFolderName = "App_Data";
+        public const string OutputFolderName = "App_Data";
 
+        public const string ScriptFolderName = "script";
         public const string RawHtmlFolderName = "html";
         public const string ScreenShotFolderName = "screenshot";
         public const string RunnerScriptPath = "ScriptRunner.js";
