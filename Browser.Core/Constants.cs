@@ -1,4 +1,7 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.IO;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace Browser.Core
 {
@@ -11,6 +14,31 @@ namespace Browser.Core
         public const string ScreenShotFolderName = "screenshot";
         public const string RunnerScriptPath = "ScriptRunner.js";
 
+        private static string AssemblyDirectory
+        {
+            get
+            {
+                var codeBase = Assembly.GetExecutingAssembly().CodeBase;
+                var uri = new UriBuilder(codeBase);
+                var path = Uri.UnescapeDataString(uri.Path);
+                return Path.GetDirectoryName(path);
+            }
+        }
+        
+        private static string _executingFolderPath = null;
+        public static string ExecutingFolderPath
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_executingFolderPath))
+                {
+                    _executingFolderPath = AssemblyDirectory;
+                }
+
+                return _executingFolderPath;
+            }
+        }
+        
         public static string RawHtmlFolderPath
         {
             get
@@ -31,11 +59,11 @@ namespace Browser.Core
             {
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 {
-                    return OutputFolderName + "\\";
+                    return Path.Combine( ExecutingFolderPath , OutputFolderName) + "\\";
                 }
                 else
                 {
-                    return OutputFolderName + "/";
+                    return Path.Combine( ExecutingFolderPath , OutputFolderName) + "/";
                 }
             }
         }

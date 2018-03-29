@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Browser.WebApi.Controllers
 {
-    [Route("/Screenshot")]
     public class ScreenShotController : Controller
     {
         private readonly IBrowserService _browserService;
@@ -18,8 +17,9 @@ namespace Browser.WebApi.Controllers
             _browserService = browserService;
         }
 
-        [HttpGet("{url}")]
-        public FileResult Get(string url, string script = "", int width=1200, int height=900)
+        [Route("/Screenshot")]
+        [HttpPost]
+        public FileResult Post(string url, string script = "", int width=1200, int height=900)
         {
             var content = _browserService.TakeScreenShot(url, script, height, width);
 
