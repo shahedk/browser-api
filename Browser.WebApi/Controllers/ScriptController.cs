@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Browser.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,36 +12,19 @@ namespace Browser.WebApi.Controllers
     [Route("/Script")]
     public class ScriptController : Controller
     {
-        // GET: api/Script
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IBrowserService _browserService;
+
+        public ScriptController(IBrowserService browserService)
         {
-            return new string[] { "value1", "value2" };
+            _browserService = browserService;
         }
 
-        // GET: api/Script/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpPost("{url}")]
+        public BrowserContent Post(string url, [FromBody]string script = "", int width = 1200, int height = 900)
         {
-            return "value";
-        }
-        
-        // POST: api/Script
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-        
-        // PUT: api/Script/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-        
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            var content = _browserService.GetContent(url, script, height, width);
+
+            return content;
         }
     }
 }

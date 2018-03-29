@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{D60AA0CE-DD8F-464C-8208-5002AD9E2F8C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Browser.WebApi/Controllers/ScriptController.cs">
+    <Files>
+      <File FileName="Browser.WebApi/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Browser.WebApi/Controllers/RawHtmlController.cs" Line="1" Column="1" />
+      <File FileName="Browser.WebApi/Controllers/ScriptController.cs" Line="16" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Browser.WebApi PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
