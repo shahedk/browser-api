@@ -54,7 +54,7 @@ namespace Browser.Core
             
 
             // Create script file and save script content there
-            var executingFolder = Directory.GetCurrentDirectory();
+            var executingFolder = Constants.ExecutingFolderPath;
             var scriptDestPath = Path.Combine(executingFolder, Constants.OutputFolderName, Constants.ScriptFolderName, settings.ParserScriptName);
             File.WriteAllText(scriptDestPath, script);
 
