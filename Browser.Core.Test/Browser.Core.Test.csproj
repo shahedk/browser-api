@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Browser.Core\Browser.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Test_Data\Scripts\page-info.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
