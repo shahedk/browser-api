@@ -25,19 +25,19 @@
                 <input required="" type="number" class="form-control" id="txtWidth" value="1200" style="max-width: 200px"/>
             </div>
 
-            <input type="button" class="btn btn-primary" onclick="callApi()" value="Submit" />
+            <input type="button" class="btn btn-primary" onclick="callApi()" value="Submit" id="btnSubmit"/>
         </form>
     </div>
 </div>
 
 
-<div class="card mt-3 d-none">
+<div id="divResult" class="card mt-3 d-none">
     <div class="card-header">
         Result
     </div>
     
     <div class="card-body">
-        <img class="img img-fluid" src="http://cdn.shahed.me/webstorm-1-1.png"></img>
+        <img id="imgResult" class="img img-fluid" src="/img/loading.gif"></img>
     </div>
     
 </div>
@@ -47,16 +47,27 @@
     <script>
         function callApi() {
 
+            $('#btnSubmit').attr('disabled', 'disabled');
             var data = {};
             
             data.url = $('#txtUrl').val();
             data.width = $('#txtWidth').val();
             data.height = $('#txtHeight').val();
 
-            $.post('/Screenshot', data,
+            // Show result div
+            $('#divResult').removeClass('d-none');
+
+            // Invoke service
+            $.post('/Screenshot',
+                data,
                 function(res) {
-                    console.log(res)
-                })
+                    console.log(res);
+                    $('#btnSubmit').removeAttr('disabled');
+
+                    // Update result
+                    var imgUrl = '/Screenshot/?fileName=' + encodeURI(res.screenShotPath);
+                    $('#imgResult').attr('src', imgUrl);
+                });
         }
     </script>
 }

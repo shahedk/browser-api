@@ -36,6 +36,7 @@ namespace Browser.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }

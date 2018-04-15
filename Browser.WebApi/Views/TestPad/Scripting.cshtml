@@ -3,4 +3,62 @@
     Layout = "_Layout";
 }
 
-<h2>Scripting</h2>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" href="#parameters" role="tab" data-toggle="tab">Parameters</a>
+    </li>
+    <li class="nav-item">
+        <a id="resultTabHeader" class="nav-link" href="#result" role="tab" data-toggle="tab">Result</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div role="tablpanel" class="tab-pane fade active" id="parameters">
+        <form>
+            <div class="form-group">
+                <label for="txtUrl">Web page url:</label>
+                <input required="" type="url" class="form-control" id="txtUrl" value="https://shahed.me" />
+            </div>
+
+            <input type="button" class="btn btn-primary" onclick="callApi()" value="Submit" id="btnSubmit" />
+        </form>
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade" id="result">
+        <textarea style="width: 100%; height: 400px" id="jsonResult">Loading...</textarea>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        function callApi() {
+
+            $('#btnSubmit').attr('disabled', 'disabled');
+
+            var url = $('#txtUrl').val();
+            var data = {};
+            data.script = 'var x = 0;';
+
+            // Show result div
+            $('#resultTabHeader').click();
+
+            // Invoke service
+            $.ajax({
+                url: '/Script?url='+ url,
+                type: "POST",
+                data: data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (res) {
+                    console.log(res);
+                    $('#btnSubmit').removeAttr('disabled');
+
+                    // Update result
+                    $('#jsonResult').text(JSON.stringify(res));
+                }
+            });
+        }
+    </script>
+}

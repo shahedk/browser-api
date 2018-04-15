@@ -19,7 +19,7 @@ namespace Browser.WebApi.Controllers
             _browserService = browserService;
         }
 
-        [HttpPost("{url}")]
+        [HttpPost]
         public BrowserContent Post(string url, [FromBody]string script = "", int width = 1200, int height = 900)
         {
             var content = _browserService.GetContent(url, script, height, width);

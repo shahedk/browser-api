@@ -12,11 +12,11 @@ namespace Browser.WebApi.Controllers
             _browserService = browserService;
         }
 
-        [HttpGet("{url}")]
-        public FileResult Get(string url, string script = "", int width = 1200, int height = 900)
+        [HttpPost]
+        public FileResult Post(string url, string script = "", int width = 1200, int height = 900)
         {
             var content = _browserService.GetRawHtml(url, script, height, width);
-            return PhysicalFile(content.ScreenShotPath, "text/html", "screenshot.png");
+            return PhysicalFile(content.RawHtmlPath, "text/html", content.RawHtmlPath);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Browser.Core;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Browser.WebApi.Controllers
 {
+    [Route("/Screenshot")]
     public class ScreenShotController : Controller
     {
         private readonly IBrowserService _browserService;
@@ -17,13 +19,28 @@ namespace Browser.WebApi.Controllers
             _browserService = browserService;
         }
 
-        [Route("/Screenshot")]
+        //[Route("/Screenshot")]
         [HttpPost]
-        public FileResult Post(string url, string script = "", int width=1200, int height=900)
+        public BrowserContent Post(string url, string script = "", int width=1200, int height=900)
         {
             var content = _browserService.TakeScreenShot(url, script, height, width);
+            return content;
+        }
 
-            return PhysicalFile(content.ScreenShotPath, "image/png", "screenshot.png");
+        
+        [HttpGet]
+        public ActionResult Get(string fileName)
+        {
+            try
+            {
+                var filePath = Path.Combine(Constants.OutputFolderPath, fileName);
+                return PhysicalFile( filePath, "image/png", "screenshot.png");
+            }
+            catch
+            {
+                return NotFound("File not found");
+            }
+            
         }
     }
 }

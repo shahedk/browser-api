@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <None Update="App_Data\script\EmptyScript.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="App_Data\html\.gitkeep">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

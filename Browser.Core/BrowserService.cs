@@ -37,9 +37,9 @@ namespace Browser.Core
             var browser = new PhantomJsBrowser();
             var settings = new BrowserSettings()
             {
-                TakeScreenShot = false,
-                SaveRawHtml = true,
-                PageUrl = "https://shahed.me"
+                TakeScreenShot = takeScreenshot,
+                SaveRawHtml = saveRawHtml,
+                PageUrl = url
             };
 
             // When no script is provided by user, use the default script
@@ -50,13 +50,14 @@ namespace Browser.Core
             else
             {
                 settings.ParserScriptName = settings.UniqueId + ".js";
+                
+                // Create script file and save script content there
+                var executingFolder = Constants.ExecutingFolderPath;
+                var scriptDestPath = Path.Combine(executingFolder, Constants.OutputFolderName, Constants.ScriptFolderName, settings.ParserScriptName);
+                File.WriteAllText(scriptDestPath, script);
             }
-            
 
-            // Create script file and save script content there
-            var executingFolder = Constants.ExecutingFolderPath;
-            var scriptDestPath = Path.Combine(executingFolder, Constants.OutputFolderName, Constants.ScriptFolderName, settings.ParserScriptName);
-            File.WriteAllText(scriptDestPath, script);
+
 
             // Load page into browser, execute script and get content
             var content = browser.GetContent(settings);
