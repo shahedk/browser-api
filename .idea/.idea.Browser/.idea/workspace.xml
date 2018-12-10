@@ -3,11 +3,52 @@
   <component name="ChangeListManager">
     <list default="true" id="a8402ac5-9c82-455e-bc26-c14717afd33e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Browser/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Browser/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Browser.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Browser.WebApi/Browser.WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/BrowserServiceTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/ScriptingTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/Test_Data/Scripts/page-info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/ScriptRunner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/html/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/linux/phantomjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/osx/phantomjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/screenshot/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/script/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/script/EmptyScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/win/phantomjs.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/Browser.Core.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/BrowserContent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/BrowserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/BrowserSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/Constants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/IBrowser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/IBrowserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/PhantomJsBrowser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.Core/StringHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Browser.WebApi.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/RawHtmlController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/ScreenShotController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/ScriptController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/TestPadController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/RawHtml.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Screenshot.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Scripting.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Browser.WebApi/wwwroot/img/loading.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Browser.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Browser.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,36 +60,40 @@
     <session id="-216657664">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="4" />
+          <entry key="cs" value="13" />
           <entry key="cshtml" value="4" />
-          <entry key="csproj" value="7" />
+          <entry key="csproj" value="9" />
           <entry key="js" value="1" />
-          <entry key="sln" value="2" />
+          <entry key="sln" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="4" />
-          <entry key="Csproj" value="7" />
+          <entry key="C#" value="13" />
+          <entry key="Csproj" value="9" />
           <entry key="JavaScript" value="1" />
           <entry key="Razor" value="4" />
-          <entry key="Solution File" value="2" />
+          <entry key="Solution File" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cs" value="2" />
           <entry key="csproj" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="C#" value="2" />
           <entry key="Csproj" value="5" />
         </counts>
       </usages-collector>
@@ -56,6 +101,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/BrowserServiceTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1522330831915" expanded="true" signature="6:66" ph="..." />
+                <marker date="1522330831915" expanded="true" signature="95:147" ph="{...}" />
+                <marker date="1522330831915" expanded="true" signature="133:145" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/PhantomJsBrowserTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+              <folding>
+                <marker date="1544393564721" expanded="false" signature="6:29" ph="..." />
+                <marker date="1544393564721" expanded="true" signature="58:1622" ph="{...}" />
+                <marker date="1544393564721" expanded="true" signature="98:1620" ph="{...}" />
+                <marker date="1544393564721" expanded="true" signature="152:856" ph="{...}" />
+                <marker date="1544393564721" expanded="true" signature="274:465" ph="{...}" />
+                <marker date="1544393564721" expanded="true" signature="908:1614" ph="{...}" />
+                <marker date="1544393564721" expanded="true" signature="1030:1220" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/Browser.Core.Test.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Browser.sln">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,67 +151,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/TestPadController.cs">
+        <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/ScriptingTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="407">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding>
+                <marker date="1522330831916" expanded="false" signature="6:43" ph="..." />
+                <marker date="1522330831916" expanded="true" signature="72:1047" ph="{...}" />
+                <marker date="1522330831916" expanded="true" signature="105:1045" ph="{...}" />
+                <marker date="1522330831916" expanded="true" signature="170:1039" ph="{...}" />
+                <marker date="1522330831916" expanded="true" signature="363:500" ph="{...}" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/RawHtml.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-655">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Screenshot.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Scripting.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/_Layout.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Browser.WebApi/Browser.WebApi.csproj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Browser.Core/Browser.Core.csproj">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -148,22 +185,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Browser.Core/BrowserService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/RawHtml.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Screenshot.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.Core.Test/ScriptingTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.Core.Test/BrowserServiceTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/ScriptController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/ScreenShotController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Scripting.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.Core/PhantomJsBrowser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/TestPadController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/RawHtmlController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.Core/BrowserSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Browser.Core/Constants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Browser.Core.Test/BrowserServiceTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Browser.Core.Test/PhantomJsBrowserTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Browser.Core.Test/ScriptingTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -183,6 +207,8 @@
         <option value="$PROJECT_DIR$/Browser.Core/Browser.Core.csproj" />
         <option value="$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj" />
         <option value="$PROJECT_DIR$/Browser.WebApi/Browser.WebApi.csproj" />
+        <option value="$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs" />
+        <option value="$PROJECT_DIR$/test/Browser.Core.Test/Browser.Core.Test.csproj" />
       </list>
     </option>
   </component>
@@ -192,11 +218,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="49" />
-    <option name="width" value="1397" />
-    <option name="height" value="851" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="37" />
+    <option name="y" value="23" />
+    <option name="width" value="1403" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -206,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -216,33 +243,39 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Browser.WebApi" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Browser.Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Browser.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Browser.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".NETCoreApp 2.2" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Browser.Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".NETCoreApp 2.2" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SDK" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Browser.WebApi" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Browser.WebApi" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Browser" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Browser.WebApi" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TestPad" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,11 +336,14 @@
       <updated>1522337281550</updated>
       <workItem from="1522337284667" duration="6996000" />
       <workItem from="1544391393278" duration="1034000" />
+      <workItem from="1544393512151" duration="140000" />
+      <workItem from="1544395950988" duration="181000" />
+      <workItem from="1544396898807" duration="477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8030000" />
+    <option name="totallyTimeSpent" value="8828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,28 +355,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="49" width="1397" height="851" extended-state="0" />
-    <editor active="true" />
+    <frame x="37" y="23" width="1403" height="877" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24649447" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534901" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="REST Client" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936507" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2010582" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2010582" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32806325" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="9" weight="0.32936507" />
+      <window_info anchor="bottom" id="Unit Tests" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Build" order="13" visible="true" weight="0.32806325" />
+      <window_info anchor="bottom" id="Build" order="13" visible="true" weight="0.32738853" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="REST Client" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -351,7 +386,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -424,6 +459,19 @@
           </properties>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs</url>
+          <line>11</line>
+          <properties documentPath="$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs" initialLine="11">
+            <startOffsets>
+              <option value="225" />
+            </startOffsets>
+            <endOffsets>
+              <option value="466" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
         <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="11" />
@@ -446,13 +494,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.Core/BrowserSettings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/RawHtmlController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -474,141 +515,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.Core/PhantomJsBrowser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding>
-            <marker date="1522330832919" expanded="false" signature="6:147" ph="..." />
-            <marker date="1522330832919" expanded="true" signature="171:4414" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="218:4412" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="343:924" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="482:780" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="813:885" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="934:4406" ph="Private Methods" />
-            <marker date="1522330832919" expanded="true" signature="1025:2421" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="1226:1501" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="1678:2086" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="1804:1885" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="1970:2033" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="2179:2253" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="2308:2382" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="2458:2967" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="2582:2654" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="2726:2795" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="2865:2932" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="3039:4386" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="3119:3216" ph="{...}" />
-            <marker date="1522330832919" expanded="true" signature="4281:4350" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Browser.Core.Test/ScriptingTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1522330831916" expanded="false" signature="6:43" ph="..." />
-            <marker date="1522330831916" expanded="true" signature="72:1047" ph="{...}" />
-            <marker date="1522330831916" expanded="true" signature="105:1045" ph="{...}" />
-            <marker date="1522330831916" expanded="true" signature="170:1039" ph="{...}" />
-            <marker date="1522330831916" expanded="true" signature="363:500" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.Background/Program.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.Background/Browser.Background.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.Background/Program.cs" />
+    <entry file="file://$PROJECT_DIR$/Browser.Background/Browser.Background.csproj" />
     <entry file="file://$PROJECT_DIR$/Browser.Core/Constants.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <marker date="1522344648424" expanded="true" signature="6:93" ph="..." />
-            <marker date="1522344648424" expanded="true" signature="117:2468" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="146:2466" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="505:807" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="531:797" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="924:1196" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="950:1186" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1028:1126" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1252:1625" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1278:1615" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1365:1473" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1494:1601" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1671:2078" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1697:2068" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1784:1909" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="1930:2054" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="2127:2460" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="2153:2450" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="2240:2328" ph="{...}" />
-            <marker date="1522344648424" expanded="true" signature="2349:2436" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Browser.Core.Test/Test_Data/Scripts/page-info.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <marker date="1522330831915" expanded="false" signature="6:29" ph="..." />
-            <marker date="1522330831915" expanded="true" signature="58:1622" ph="{...}" />
-            <marker date="1522330831915" expanded="true" signature="98:1620" ph="{...}" />
-            <marker date="1522330831915" expanded="true" signature="152:856" ph="{...}" />
-            <marker date="1522330831915" expanded="true" signature="274:465" ph="{...}" />
-            <marker date="1522330831915" expanded="true" signature="908:1614" ph="{...}" />
-            <marker date="1522330831915" expanded="true" signature="1030:1220" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Browser.Core.Test/BrowserServiceTest.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.Core/Browser.Core.csproj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.sln">
+    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/_Layout.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/TestPadController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/RawHtml.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-655">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Screenshot.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state relative-caret-position="445">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -619,10 +550,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/_Layout.cshtml">
+    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Screenshot.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="310">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Views/TestPad/RawHtml.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Controllers/TestPadController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.Core/Browser.Core.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.Core/BrowserSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -630,6 +585,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.WebApi/Program.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.Core/PhantomJsBrowser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/ScriptingTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <marker date="1522330831916" expanded="false" signature="6:43" ph="..." />
+            <marker date="1522330831916" expanded="true" signature="72:1047" ph="{...}" />
+            <marker date="1522330831916" expanded="true" signature="105:1045" ph="{...}" />
+            <marker date="1522330831916" expanded="true" signature="170:1039" ph="{...}" />
+            <marker date="1522330831916" expanded="true" signature="363:500" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/BrowserServiceTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1522330831915" expanded="true" signature="6:66" ph="..." />
+            <marker date="1522330831915" expanded="true" signature="95:147" ph="{...}" />
+            <marker date="1522330831915" expanded="true" signature="133:145" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/PhantomJsBrowserTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <marker date="1544393564721" expanded="false" signature="6:29" ph="..." />
+            <marker date="1544393564721" expanded="true" signature="58:1622" ph="{...}" />
+            <marker date="1544393564721" expanded="true" signature="98:1620" ph="{...}" />
+            <marker date="1544393564721" expanded="true" signature="152:856" ph="{...}" />
+            <marker date="1544393564721" expanded="true" signature="274:465" ph="{...}" />
+            <marker date="1544393564721" expanded="true" signature="908:1614" ph="{...}" />
+            <marker date="1544393564721" expanded="true" signature="1030:1220" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/Browser.Core.Test.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
         </state>
       </provider>
     </entry>

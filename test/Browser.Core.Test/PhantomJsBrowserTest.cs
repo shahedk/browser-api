@@ -14,7 +14,7 @@ namespace Browser.Core.Test
                 TakeScreenShot =  false,
                 SaveRawHtml = true,
                 ParserScriptName = "EmptyScript.js",
-                PageUrl = "https://shahed.me"
+                PageUrl = "https://shahed.ca"
             };
 
 
