@@ -1,4 +1,5 @@
-﻿<Properties StartupConfiguration="{D49B711D-AC68-4917-B34B-B65F32768B97}|Default">
+﻿<Properties StartupConfiguration="{D60AA0CE-DD8F-464C-8208-5002AD9E2F8C}|Default">
+  <MonoDevelop.Ide.ItemProperties.Browser.WebApi PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Browser.Core.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

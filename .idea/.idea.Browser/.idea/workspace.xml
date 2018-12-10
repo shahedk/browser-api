@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8402ac5-9c82-455e-bc26-c14717afd33e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Browser/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Browser/xs/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/Browser.Core.Test.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/BrowserServiceTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/PhantomJsBrowserTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/ScriptingTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core.Test/Test_Data/Scripts/page-info.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/ScriptRunner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/html/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/linux/phantomjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/osx/phantomjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/screenshot/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/script/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/script/EmptyScript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/App_Data/win/phantomjs.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/Browser.Core.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/BrowserContent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/BrowserService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/BrowserSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/Constants.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/IBrowser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/IBrowserService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/PhantomJsBrowser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.Core/StringHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Browser.WebApi.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/RawHtmlController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/ScreenShotController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/ScriptController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Controllers/TestPadController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/RawHtml.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Screenshot.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/Scripting.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/Views/TestPad/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.WebApi/wwwroot/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Browser.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Browser.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" />
-    </list>
+    <list default="true" id="a8402ac5-9c82-455e-bc26-c14717afd33e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +12,7 @@
     <session id="-216657664">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
@@ -135,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/Browser.Core.Test.csproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+            <state relative-caret-position="90">
+              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -218,7 +170,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="1403" />
@@ -338,12 +290,12 @@
       <workItem from="1544391393278" duration="1034000" />
       <workItem from="1544393512151" duration="140000" />
       <workItem from="1544395950988" duration="181000" />
-      <workItem from="1544396898807" duration="477000" />
+      <workItem from="1544396898807" duration="883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8828000" />
+    <option name="totallyTimeSpent" value="9234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,9 +307,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="23" width="1403" height="877" extended-state="1" />
+    <frame x="37" y="23" width="1403" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2534901" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -373,7 +326,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Build" order="13" visible="true" weight="0.32738853" />
+      <window_info active="true" anchor="bottom" id="Build" order="13" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="REST Client" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -655,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Browser.Core.Test/Browser.Core.Test.csproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+        <state relative-caret-position="90">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
