@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Xunit;
 
 namespace Browser.Core.Test
@@ -9,15 +11,12 @@ namespace Browser.Core.Test
         [Fact]
         public void ScrapData_With_jQuery()
         {
-            //var executingFolder = Directory.GetCurrentDirectory();
-
-
             var browser = new PhantomJsBrowser();
             var settings = new BrowserSettings()
             {
                 TakeScreenShot = false,
                 SaveRawHtml = true,
-                PageUrl = "https://shahed.me"
+                PageUrl = "https://shahed.ca"
             };
             settings.ParserScriptName = settings.UniqueId + ".js";
 
@@ -30,6 +29,13 @@ namespace Browser.Core.Test
             File.WriteAllText(scriptDestPath, script);
 
             var content = browser.GetContent(settings);
+
+            var scanData = JsonConvert.DeserializeObject<JObject>(content.ParsedData);
+
+            var actual = scanData["data"][0]["title"];
+            var expected = "Test title";
+
+            Assert.Equal(expected, actual);
 
             Assert.True(string.IsNullOrEmpty(content.Error));
 
