@@ -9,7 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>@ViewBag.Title</title>
-</head>
+
+    <style>
+        .container {
+            max-width: 90% !important;
+        }
+
+        .tab-content {
+            border-bottom: 1px solid #dee2e6;
+            border-left: 1px solid #dee2e6;
+            border-right: 1px solid #dee2e6;
+        }
+    </style>
+    </head>
 <body>
 
 
@@ -36,13 +48,19 @@
 
 
 <div class="container mt-3">
-    
+
     <h5 class="mt-4">
-        Test Pad: @ViewBag.Title
+        @ViewBag.Title
     </h5>
+    
+    <div class="mt-5">
+        @RenderBody()
+    </div>
+    
+
     <div class="row mt-5">
         <div class="col">
-            @RenderBody()
+
         </div>
     </div>
 </div>
