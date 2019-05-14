@@ -78,8 +78,8 @@ try {
                         // Create data variables
                         page.evaluate(function () {
                             window.scan_waitTime = 500;
-                            window.scan_data = '';
-                            window.scan_error = '';
+                            window.scan_data = [];
+                            window.scan_error = [];
                             window.scan_status = 'pending';
                         });
 

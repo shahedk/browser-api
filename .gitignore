@@ -7,3 +7,9 @@ obj
 /.vs/Browser/v15/Server/sqlite3/storage.ide-shm
 /.vs/Browser/v15/Server/sqlite3/storage.ide-wal
 /.vs/config/applicationhost.config
+.vs/Browser/config/applicationhost.config
+.vs/Browser/v16/.suo
+.vs/Browser/v16/Server/sqlite3/db.lock
+.vs/Browser/v16/Server/sqlite3/storage.ide
+.vs/Browser/v16/Server/sqlite3/storage.ide-shm
+.vs/Browser/v16/Server/sqlite3/storage.ide-wal
