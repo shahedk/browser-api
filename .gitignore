@@ -13,3 +13,5 @@ obj
 .vs/Browser/v16/Server/sqlite3/storage.ide
 .vs/Browser/v16/Server/sqlite3/storage.ide-shm
 .vs/Browser/v16/Server/sqlite3/storage.ide-wal
+/.vs/Browser/DesignTimeBuild/.dtbcache
+/src/Browser.WebApi/Browser.WebApi.csproj.user

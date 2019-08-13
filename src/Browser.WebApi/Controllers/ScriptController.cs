@@ -20,7 +20,7 @@ namespace Browser.WebApi.Controllers
         }
 
         [HttpPost]
-        public BrowserContent Post(DataModel model)
+        public BrowserContent Post([FromBody] DataModel model)
         {
             var content = _browserService.GetContent(model.Url, model.Script, model.Height, model.Width);
 

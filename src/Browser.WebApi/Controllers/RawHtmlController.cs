@@ -13,7 +13,15 @@ namespace Browser.WebApi.Controllers
         }
 
         [HttpPost]
-        public FileResult Post(string url, string script = "", int width = 1200, int height = 900)
+        public FileResult Post(string url, string script = "", int width = 1600, int height = 1200)
+        {
+            var content = _browserService.GetRawHtml(url, script, height, width);
+            return PhysicalFile(content.RawHtmlPath, "text/html", content.RawHtmlPath);
+        }
+
+
+        [HttpGet]
+        public FileResult Get(string url, string script = "", int width = 1600, int height = 1200)
         {
             var content = _browserService.GetRawHtml(url, script, height, width);
             return PhysicalFile(content.RawHtmlPath, "text/html", content.RawHtmlPath);
