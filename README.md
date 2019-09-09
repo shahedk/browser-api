@@ -2,7 +2,7 @@
 
 BrowserApi is available in docker container. We can also run it locally as a .NET Core web application. Internally, it uses [PhantomJs](https://phantomjs.org) to simulate headless browser environment.
 
-Run BrowserApi on Port:8080
+The following docker command with start BrowserApi on port 8080
 ```
 docker run --name=browser-api -p 8080:80 shahedk/browser-api
 ```
