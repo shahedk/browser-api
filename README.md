@@ -13,6 +13,3 @@ docker run --name=browser-api -p 8080:80 shahedk/browser-api
  - **Take screenshot**: Take screen shot any web page with specified height & width.
  - **Get the raw HTML**: Access page content of any ajax web page as simple html.
  - **Execute script**: Provide javascript code when calling the API to execute scripts on any web page.
-
-
-`docker: shahedk/browser-api`
