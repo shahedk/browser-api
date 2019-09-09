@@ -1,12 +1,13 @@
-# Browser API
+# [BrowserApi](https://b.shahedk.net) - Headless Browser as an Web API
 
-Headless web browser as a service. Its available as: a) docker container exposing rest api, b) nuget package, c) self hosted web api.
+BrowserApi is available in docker container. We can also run it locally as a .NET Core web application. Internally, it uses [PhantomJs](https://phantomjs.org) to simulate headless browser environment.
 
-### Key Features:
+## Use Cases
 
-* Take screenshot of website with specified height & width
-* Get the raw HTML of a web page after the content is properly loaded/rendered.
-* Execute any javascript on any website similar to browser dev tools and get results.
+ - **Zero setup Headless web testing**: Fast testing of web page loading without the browser. 
+ - **Take screenshot**: Take screen shot any web page with specified height & width.
+ - **Get the raw HTML**: Access page content of any ajax web page as simple html.
+ - **Execute script**: Provide javascript code when calling the API to execute scripts on any web page.
 
 
 `docker: shahedk/browser-api`
