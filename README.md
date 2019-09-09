@@ -1,4 +1,4 @@
-# [BrowserApi](https://b.shahedk.net) - Headless Browser as an Web API
+# BrowserApi - Headless Browser as an Web API
 
 BrowserApi is available in docker container. We can also run it locally as a .NET Core web application. Internally, it uses [PhantomJs](https://phantomjs.org) to simulate headless browser environment.
 
