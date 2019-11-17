@@ -15,3 +15,13 @@ jobs:
         dotnet-version: 2.2.108
     - name: Build with dotnet
       run: dotnet build --configuration Release
+
+    - name: Build & Push to GitHub Package
+      uses: opspresso/action-docker@master
+      env:
+        USERNAME: ${{ secrets.GITHUB_USERNAME }}
+        PASSWORD: ${{ secrets.GITHUB_PERSONAL_TOKEN }}
+        REGISTRY: "docker.pkg.github.com"
+        # IMAGE_NAME: "user_id/image_name"
+        TAG_NAME: "v0.0.1"
+        LATEST: "true"
