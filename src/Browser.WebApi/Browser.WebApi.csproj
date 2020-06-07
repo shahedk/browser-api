@@ -4,11 +4,11 @@
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="ApiGateway.Client" Version="0.7.2" />
     <PackageReference Include="Microsoft.AspNetCore.All" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0"/>
   </ItemGroup>
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools"/>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Browser.Core\Browser.Core.csproj" />

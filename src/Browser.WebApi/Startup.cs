@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiGateway.Client;
+using ApiGateway.Common;
 using Browser.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -24,6 +26,11 @@ namespace Browser.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddHttpClient();
+            services.AddTransient<IClientApiKeyService, ClientApiKeyService>();
+            services.Configure<ApiGatewaySettings>(Configuration.GetSection("ApiGatewaySettings"));
+
             services.AddTransient<IBrowserService, BrowserService>();
             services.AddMvc();
         }
@@ -35,6 +42,8 @@ namespace Browser.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseClientApiKeyValidation();
 
             app.UseStaticFiles();
             app.UseMvc();
