@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Take screenshot after page is loaded";
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Parameters
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="txtUrl">Web page url:</label>
+                        <input required="" type="url" class="form-control" id="txtUrl" value="https://shahed.ca"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtHeight">Browser height:</label>
+                        <input required="" type="number" class="form-control" id="txtHeight" value="900" style="max-width: 200px"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtWidth">Browser width:</label>
+                        <input required="" type="number" class="form-control" id="txtWidth" value="1200" style="max-width: 200px"/>
+                    </div>
+
+                    <input type="button" class="btn btn-primary" onclick="callApi()" value="Submit" id="btnSubmit"/>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Sample API Call
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="divResult" class="card mt-3 d-none">
+    <div class="card-header">
+        Result
+    </div>
+    
+    <div class="card-body">
+        <img id="imgResult" class="img img-fluid" src="/img/loading.gif"></img>
+    </div>
+    
+</div>
+
+@section scripts
+{
+    <script>
+        function callApi() {
+            
+            $('#imgResult').attr('src', "/img/loading.gif");
+            $('#btnSubmit').attr('disabled', 'disabled');
+            var data = {};
+            
+            data.url = $('#txtUrl').val();
+            data.width = $('#txtWidth').val();
+            data.height = $('#txtHeight').val();
+
+            // Show result div
+            $('#divResult').removeClass('d-none');
+
+            // Invoke service
+            $.post('/Screenshot',
+                data,
+                function(res) {
+                    console.log(res);
+                    $('#btnSubmit').removeAttr('disabled');
+
+                    // Update result
+                    var imgUrl = '/Screenshot/?fileName=' + encodeURI(res.screenShotPath);
+                    $('#imgResult').attr('src', imgUrl);
+                });
+        }
+    </script>
+}

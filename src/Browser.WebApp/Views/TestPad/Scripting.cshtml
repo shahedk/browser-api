@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Execute scripts on page and collect data";
+    Layout = "_Layout";
+}
+
+@section styles
+{
+    <link href="/lib/codemirror.css" rel="stylesheet" />
+    <style>
+        .CodeMirror {
+            border: 1px solid lightgray;
+        }
+    </style>
+}
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" href="#parameters" role="tab" data-toggle="tab">Input Parameters</a>
+    </li>
+    <li class="nav-item">
+        <a id="resultTabHeader" class="nav-link" href="#result" role="tab" data-toggle="tab">Result</a>
+    </li>
+</ul>
+
+<div class="tab-content p-3">
+    <div role="tablpanel" class="tab-pane fade active show" id="parameters">
+        <form>
+            <div class="form-group">
+                <label for="txtUrl">Web page url:</label>
+                <input required="" type="url" class="form-control" id="txtUrl" value="https://shahed.ca" />
+            </div>
+            <div>
+                <label for="txtCode">Script to be executed on the page:</label>
+                <textarea id="txtCode"></textarea>
+            </div>
+            
+            <br/>
+            <input type="button" class="btn btn-primary" onclick="callApi()" value="Submit" id="btnSubmit" />
+        </form>
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade" id="result">
+        <div class="card">
+            <div class="card-header">Data</div>
+            <div class="card-body" id="resultData"></div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">Log</div>
+            <div class="card-body" id="resultLog">
+           
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="/lib/codemirror.js"></script>
+    <script>
+        var txtCode = document.getElementById('txtCode');
+    var editor = CodeMirror.fromTextArea(txtCode,
+        {
+            mode : "javascript"
+        });
+    </script>
+    <script>
+        function callApi() {
+
+            $('#btnSubmit').attr('disabled', 'disabled');
+
+            var url = $('#txtUrl').val();
+
+            var data = {};
+            data.url = url;
+            data.script = editor.getValue();
+            data.width = 1200;
+            data.height = 800;
+
+            // Show result div
+            $('#resultTabHeader').click();
+            $('#resultData').html('Loading...');
+            $('#resultLog').html('Loading...');
+
+            $.post("/Script",
+                data,
+                function(res) {
+                    console.log(res);
+                    $('#btnSubmit').removeAttr('disabled');
+
+                    // Update result
+                    $('#resultData').html(JSON.stringify(res.parsedData));
+                    $('#resultLog').html(res.consoleOutput);
+                });
+
+            return;
+        }
+    </script>
+}
