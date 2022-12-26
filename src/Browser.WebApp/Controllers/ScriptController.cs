@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Browser.Core;
-using Microsoft.AspNetCore.Http;
+﻿using Browser.Core;
+using Browser.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Browser.WebApp.Controllers
@@ -20,20 +16,12 @@ namespace Browser.WebApp.Controllers
         }
 
         [HttpPost]
-        public BrowserContent Post([FromBody] DataModel model)
+        public BrowserContent Post([FromBody] BrowserDataModel model)
         {
             var content = _browserService.GetContent(model.Url, model.Script, model.Height, model.Width);
 
             return content;
         }
 
-        public class DataModel
-        {
-            public string Url { get; set; }
-            public string Script { get; set; }
-            public int Width { get; set; }
-            public int Height { get; set; }
-
-        }
     }
 }

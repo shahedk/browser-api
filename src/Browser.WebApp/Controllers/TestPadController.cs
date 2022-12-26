@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Browser.WebApp.Controllers
 {
-    
+
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class TestPadController : Controller
     {
         [Route("/")]

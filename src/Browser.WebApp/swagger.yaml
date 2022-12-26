@@ -1,0 +1,5 @@
+﻿info:
+  title: Browser API
+  description: A rest api to interact with web browser.
+  version: 1.0.0
+

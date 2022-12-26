@@ -19,7 +19,7 @@ namespace Browser.WebApp.Controllers
             _browserService = browserService;
         }
 
-        //[Route("/Screenshot")]
+
         [HttpPost]
         public BrowserContent Post(string url, string script = "", int width=1200, int height=900)
         {

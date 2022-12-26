@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="App_Data\script\EmptyScript.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

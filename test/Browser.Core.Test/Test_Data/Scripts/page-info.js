@@ -2,6 +2,6 @@
 var scan_data = [];
 
 x.title = "Test title";
-x.location = "http://shahed.ca";
+x.location = "https://shahed.ca";
 
 scan_data.push(x)

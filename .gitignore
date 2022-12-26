@@ -15,3 +15,6 @@ obj
 .vs/Browser/v16/Server/sqlite3/storage.ide-wal
 /.vs/Browser/DesignTimeBuild/.dtbcache
 /src/Browser.WebApi/Browser.WebApi.csproj.user
+/src/Browser.WebApp/Controllers/.DS_Store
+.vs
+.DS_Store
