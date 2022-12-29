@@ -4,7 +4,7 @@ BrowserApi is available in docker container. We can also run it locally as a .NE
 
 The following docker command with start BrowserApi on port 8080
 ```
-docker run --name=browser-api -p 8080:80 shahedk/browser-api
+docker run -p 8080:80 shahedk/browser-api
 ```
 
 ## Use Cases
