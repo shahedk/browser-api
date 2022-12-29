@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:sdk AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
 # Copy everything else and build
@@ -8,15 +8,16 @@ COPY Browser.sln Browser.sln
 RUN dotnet restore Browser.sln
 
 
-RUN dotnet publish src/Browser.WebApi/Browser.WebApi.csproj --output published-app
+RUN dotnet publish src/Browser.WebApp/Browser.WebApp.csproj --output /published-app
 
 # Build runtime image
-FROM microsoft/dotnet:aspnetcore-runtime
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 
-COPY --from=build-env app/src/Browser.WebApi/published-app .
+COPY --from=build-env /published-app .
 
 # Configure container for phantomJS dependencies
+RUN export OPENSSL_CONF=/etc/ssl/
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -29,4 +30,4 @@ RUN ln -sf /app/App_Data/linux/phantomjs /usr/local/bin/phantomjs
 RUN ln -sf /app/App_Data/linux/phantomjs /usr/bin/phantomjs
 
 EXPOSE 80/tcp
-ENTRYPOINT ["dotnet", "Browser.WebApi.dll"]
+ENTRYPOINT ["dotnet", "Browser.WebApp.dll"]
